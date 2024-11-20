@@ -1,0 +1,7 @@
+{
+  "name": "mascara-mortal",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
