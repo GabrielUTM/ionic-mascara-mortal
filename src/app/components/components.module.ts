@@ -4,14 +4,17 @@ import { CommonModule } from '@angular/common';
 import { IonicModule } from '@ionic/angular';
 import { HeaderComponent } from './header/header.component';
 import { DetalleComponent } from './detalle/detalle.component';
-
+import { MenuComponent } from './menu/menu.component';
+// Importar librería que permite usar la funcion de routerlink
+import { RouterModule } from '@angular/router';
 
 @NgModule({
-  declarations: [HeaderComponent, DetalleComponent],
+  declarations: [HeaderComponent, DetalleComponent, MenuComponent],
   imports: [
     CommonModule,
-    IonicModule
+    IonicModule,
+    RouterModule
   ],
-  exports:[HeaderComponent, DetalleComponent]
+  exports:[HeaderComponent, DetalleComponent, MenuComponent]
 })
 export class ComponentsModule { }

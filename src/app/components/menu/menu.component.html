@@ -1,0 +1,20 @@
+<ion-menu side="start" menuId="first" contentId="main">
+  <ion-header>
+    <ion-toolbar color="primary">
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <ion-menu-toggle>
+        <!-- Lista de elementos los cuales contienen la ruta para acceder a esa pantalla,
+         un icono y el nombre de la pantalla
+          -->
+        <ion-item *ngFor="let item of elementos" [routerLink]="item.ruta" detail>
+          <ion-icon name="{{item.icono}}" slot="start"></ion-icon>
+          {{item.nombre}}
+        </ion-item>
+      </ion-menu-toggle>
+    </ion-list>
+  </ion-content>
+</ion-menu>

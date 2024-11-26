@@ -2,8 +2,6 @@ import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-
-
   {
     // ruta por defecto al ajecutar la aplicacion
     path: '',
