@@ -1,6 +1,15 @@
 <app-header titulo="Items"></app-header>
 
 <ion-content [fullscreen]="true">
+  <ion-segment value="default">
+    <ion-segment-button value="default">
+      <ion-label>Armas</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="segment">
+      <ion-label>Consumibles</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+
   <ion-card *ngFor="let item of itemsRecientes" (click)="verDetalle(item.id)">
     <ion-card-header>
       <img [src]="item.data.imagen" alt="Imagen Personaje">
