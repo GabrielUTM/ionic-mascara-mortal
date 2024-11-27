@@ -1,9 +1,11 @@
 <app-header titulo="personajes"></app-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">personajes</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-card *ngFor="let personaje of personajesRecientes" (click)="verDetalle(personaje.id)">
+    <ion-card-header>
+      <img [src]="personaje.data.imagen" alt="Imagen Personaje">
+      <ion-card-title>{{personaje.data.nombre}}</ion-card-title>
+      <ion-card-subtitle>{{personaje.data.descripcion}}</ion-card-subtitle>
+    </ion-card-header>
+  </ion-card>
 </ion-content>

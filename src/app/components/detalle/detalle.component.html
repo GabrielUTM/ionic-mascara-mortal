@@ -1,34 +1,19 @@
 <ion-card>
   <ion-card-header>
-    <ion-card-title>Detalle Component</ion-card-title>
-    <ion-card-subtitle>Card Lista de elementos</ion-card-subtitle>
+    <ion-card-title>{{detallePersonaje.nombre}}</ion-card-title>
+    <ion-card-subtitle>{{detallePersonaje.descripcion}}</ion-card-subtitle>
   </ion-card-header>
   <ion-row>
     <ion-col>
       <ion-list>
         <ion-item>
-          Poblacion: 
+          Bando: {{detallePersonaje.bando}} 
         </ion-item>
         <ion-item>
-          Clima: 
+          Estatura: {{detallePersonaje.estatura}} 
         </ion-item>
         <ion-item>
-          Tipo de terreno: 
-        </ion-item>
-      </ion-list>
-    </ion-col>
-  </ion-row>
-  <ion-row>
-    <ion-col>
-      <ion-list>
-        <ion-item>
-          Diametro: 
-        </ion-item>
-        <ion-item>
-          Periodo Orbital: 
-        </ion-item>
-        <ion-item>
-          Periodo de Rotación: 
+          Peso: {{detallePersonaje.peso}} 
         </ion-item>
       </ion-list>
     </ion-col>
