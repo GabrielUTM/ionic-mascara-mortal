@@ -1,2 +1,14 @@
 // For information on how to create your own theme, please see:
 // http://ionicframework.com/docs/theming/
+
+// Cambiar estilos de toda la app
+:root {
+    --ion-background-color: #1F0F0F !important;
+}
+
+ion-button {
+    --color: #FFFFFF;
+    --background: #B20802;
+    --padding-top: 1.5rem;
+    --padding-bottom: 1.5rem;
+}
