@@ -1,0 +1,28 @@
+<ion-card>
+  <ion-card-header>
+    <ion-card-title>{{detalleItem.nombre}}</ion-card-title>
+  </ion-card-header>
+  <ion-row>
+    <ion-col>
+      <ion-list>
+        <ion-item>
+          Curación: {{detalleItem.curacion}} 
+        </ion-item>
+        <ion-item>
+          Costo: ${{detalleItem.costo}} 
+        </ion-item>
+      </ion-list>
+    </ion-col>
+  </ion-row>
+</ion-card>  
+
+<ion-footer no-border>
+<ion-toolbar>
+  <ion-buttons slot="start">
+    <ion-button (click)="regresar()">
+      <ion-icon slot="start" name="arrow-round-back"></ion-icon>
+      <ion-label>Regresar</ion-label>
+    </ion-button>
+  </ion-buttons>
+</ion-toolbar>
+</ion-footer>

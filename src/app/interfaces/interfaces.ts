@@ -19,4 +19,27 @@ export interface info{
     peso:string;
 }
 
+export interface armas {
+    id:string;
+    data:stats;
+}
 
+export interface stats {
+    dano:number;
+    imagen:string;
+    municion:number;
+    nombre:string;
+    tipo:string;
+}
+
+export interface items {
+    id: string;
+    data: atr;
+}
+
+export interface atr {
+    nombre:string;
+    costo:number;
+    curacion:number;
+    imagen:string;
+}

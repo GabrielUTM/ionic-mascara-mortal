@@ -16,4 +16,20 @@ export class PersonajesService {
   getDetalle(id:string){
     return this.firestore.collection('personajes').doc(id).valueChanges();
   }
+
+  getDatosArmas(){
+    return this.firestore.collection('armas').snapshotChanges();
+  }
+
+  getDetalleArma(id:string){
+    return this.firestore.collection('armas').doc(id).valueChanges();
+  }
+
+  getDatosItems(){
+    return this.firestore.collection('items').snapshotChanges();
+  }
+
+  getDetalleItem(id:string){
+    return this.firestore.collection('items').doc(id).valueChanges();
+  }
 }
