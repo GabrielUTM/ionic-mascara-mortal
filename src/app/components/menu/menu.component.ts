@@ -11,13 +11,23 @@ export class MenuComponent  implements OnInit {
   elementos: MenuElements[] = [
     {
       icono: "home-outline",
-      nombre: "inicio",
+      nombre: "Inicio",
       ruta: "/inicio"
     },
     {
       icono: "id-card-outline",
-      nombre: "personajes",
+      nombre: "Personajes",
       ruta: "/personajes"
+    },
+    {
+      icono: "shield",
+      nombre: "Items",
+      ruta: "/items"
+    },
+    {
+      icono: "game-controller",
+      nombre: "Controles",
+      ruta: "/controles"
     },
   ]
   constructor() { }
