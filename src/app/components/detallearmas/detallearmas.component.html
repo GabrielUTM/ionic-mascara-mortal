@@ -1,7 +1,7 @@
 <ion-card>
-  <img [src]="detalleArma.imagen">
+  <img [src]="detalleArma.imagen ? detalleArma.imagen : '../../../assets/images/mascaratittle.png'">
   <ion-card-header>
-    <ion-card-title>{{detalleArma.nombre}}</ion-card-title>
+    <ion-card-title class="card__subtitle">{{detalleArma.nombre}}</ion-card-title>
   </ion-card-header>
   <ion-row>
     <ion-col>

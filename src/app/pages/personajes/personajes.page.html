@@ -3,8 +3,8 @@
 <ion-content [fullscreen]="true">
   <ion-card *ngFor="let personaje of personajesRecientes" (click)="verDetalle(personaje.id)">
     <ion-card-header>
-      <img [src]="personaje.data.imagen" alt="Imagen Personaje">
-      <ion-card-title>{{personaje.data.nombre}}</ion-card-title>
+      <img [src]="personaje.data.imagen ? personaje.data.imagen : '../../../assets/images/mascaratittle.png'" alt="Imagen Personaje">
+      <ion-card-title class="card__subtitle">{{personaje.data.nombre}}</ion-card-title>
       <ion-card-subtitle>{{personaje.data.descripcion}}</ion-card-subtitle>
     </ion-card-header>
   </ion-card>
