@@ -4,19 +4,19 @@ import { CommonModule } from '@angular/common';
 import { IonicModule } from '@ionic/angular';
 import { HeaderComponent } from './header/header.component';
 import { DetalleComponent } from './detalle/detalle.component';
-import { DetalleArmasComponent } from './detallearmas/detallearmas.component';
 import { DetalleItemsComponent } from './detalleitems/detalleitems.component';
 import { MenuComponent } from './menu/menu.component';
 // Importar librería que permite usar la funcion de routerlink
 import { RouterModule } from '@angular/router';
+import { DetallearmasComponent } from './detallearmas/detallearmas.component';
 
 @NgModule({
-  declarations: [HeaderComponent, DetalleComponent, DetalleArmasComponent, DetalleItemsComponent, MenuComponent],
+  declarations: [HeaderComponent, DetalleComponent, DetallearmasComponent, DetalleItemsComponent, MenuComponent],
   imports: [
     CommonModule,
     IonicModule,
     RouterModule
   ],
-  exports:[HeaderComponent, DetalleComponent, DetalleArmasComponent, DetalleItemsComponent, MenuComponent]
+  exports:[HeaderComponent, DetalleComponent, DetallearmasComponent ,DetalleItemsComponent, MenuComponent]
 })
 export class ComponentsModule { }

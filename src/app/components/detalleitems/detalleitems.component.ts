@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { atr } from 'src/app/interfaces/interfaces';
+import { stats } from 'src/app/interfaces/interfaces';
 import { ModalController } from '@ionic/angular';
 import { PersonajesService } from 'src/app/services/personajes.service';
 @Component({
@@ -9,7 +9,7 @@ import { PersonajesService } from 'src/app/services/personajes.service';
 })
 export class DetalleItemsComponent  implements OnInit {
   @Input() id:any;
-  detalleItem = {} as atr;
+  detalleItem = {} as stats;
 
    constructor(
     private modalCrtl: ModalController,
@@ -24,7 +24,7 @@ export class DetalleItemsComponent  implements OnInit {
     this.detalleArmas.getDetalleItem(this.id)
     .subscribe((respuesta)=> {
       console.log("Detalle de Item: ", respuesta)
-      this.detalleItem = <atr>respuesta;
+      this.detalleItem = <stats>respuesta;
     })
   }
 

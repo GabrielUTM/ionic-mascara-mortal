@@ -1,16 +1,19 @@
 <ion-card>
+  <img [src]="detalleArma.imagen">
   <ion-card-header>
     <ion-card-title>{{detalleArma.nombre}}</ion-card-title>
-    <ion-card-subtitle>{{detalleArma.tipo}}</ion-card-subtitle>
   </ion-card-header>
   <ion-row>
     <ion-col>
       <ion-list>
         <ion-item>
-          Capacidad cargador: {{detalleArma.municion}} 
+          Daño: {{detalleArma.dano}} 
         </ion-item>
         <ion-item>
-          Daño: {{detalleArma.dano}} 
+          Descripcion: {{detalleArma.descripcion}} 
+        </ion-item>
+        <ion-item>
+          Costo: ${{detalleArma.costo}} 
         </ion-item>
       </ion-list>
     </ion-col>
