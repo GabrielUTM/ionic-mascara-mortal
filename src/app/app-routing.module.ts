@@ -19,7 +19,11 @@ const routes: Routes = [
   {
     path: 'items',
     loadChildren: () => import('./pages/items/items.module').then( m => m.ItemsPageModule)
+  },  {
+    path: 'controles',
+    loadChildren: () => import('./pages/controles/controles.module').then( m => m.ControlesPageModule)
   },
+
 
 ];
 

@@ -5,18 +5,18 @@ export interface MenuElements {
     ruta: string
 }
 
-export interface datos{
-    id:string;
-    data:info; 
+export interface datos {
+    id: string;
+    data: info;
 }
 
-export interface info{
-    bando:string;
-    descripcion:string;
-    estatura:string;
-    imagen:string;
-    nombre:string;
-    peso:string;
+export interface info {
+    bando: string;
+    descripcion: string;
+    estatura: string;
+    imagen: string;
+    nombre: string;
+    peso: string;
 }
 
 
@@ -26,11 +26,21 @@ export interface items {
 }
 
 export interface stats {
-    nombre:string;
-    dano:number;
-    descripcion:string;
-    costo:number;
-    curacion:number;
-    imagen:string;
-    tipo:string;
+    nombre: string;
+    dano: number;
+    descripcion: string;
+    costo: number;
+    curacion: number;
+    imagen: string;
+    tipo: string;
+}
+
+
+export interface datosControles {
+    id: string;
+    data: controles;
+}
+export interface controles {
+    imagen: string
+    accion:string
 }

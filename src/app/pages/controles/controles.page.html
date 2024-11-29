@@ -1,0 +1,17 @@
+<app-header titulo="Controles"></app-header>
+
+<ion-content [fullscreen]="true">
+  <ion-grid fixed>
+    <h1>Controles del juego</h1>
+    <ion-row>
+      <ion-col>
+        <ion-list lines="full">
+          <ion-item *ngFor="let control of controles">
+            <img [src]="control.data.imagen ? control.data.imagen : '../../../assets/images/mascaratittle.png'" alt="imagen tecla" class="control__img">
+            <ion-label>{{control.data.accion}}</ion-label>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

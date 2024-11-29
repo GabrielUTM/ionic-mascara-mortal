@@ -24,4 +24,10 @@ export class PersonajesService {
   getDetalleItem(id:string){
     return this.firestore.collection('items').doc(id).valueChanges();
   }
+
+  // Obtener controles y filtrarlos por orden ascendente
+  getControls(){
+    return this.firestore.collection('controles', col => col.orderBy("order", "asc")).snapshotChanges();
+  }
+
 }
