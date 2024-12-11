@@ -9,14 +9,15 @@ import { MenuComponent } from './menu/menu.component';
 // Importar librería que permite usar la funcion de routerlink
 import { RouterModule } from '@angular/router';
 import { DetallearmasComponent } from './detallearmas/detallearmas.component';
+import { DetallenivelesComponent } from './detalleniveles/detalleniveles.component';
 
 @NgModule({
-  declarations: [HeaderComponent, DetalleComponent, DetallearmasComponent, DetalleItemsComponent, MenuComponent],
+  declarations: [HeaderComponent, DetalleComponent, DetallearmasComponent, DetalleItemsComponent, MenuComponent, DetallenivelesComponent],
   imports: [
     CommonModule,
     IonicModule,
     RouterModule
   ],
-  exports:[HeaderComponent, DetalleComponent, DetallearmasComponent ,DetalleItemsComponent, MenuComponent]
+  exports:[HeaderComponent, DetalleComponent, DetallearmasComponent ,DetalleItemsComponent, MenuComponent, DetallenivelesComponent]
 })
 export class ComponentsModule { }

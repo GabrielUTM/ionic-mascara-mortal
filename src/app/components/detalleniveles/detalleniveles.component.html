@@ -1,0 +1,30 @@
+<ion-card>
+  <img
+    [src]="nivel?.imagen ? nivel.imagen : '../../../assets/images/default-nivel.png'"
+    alt="Imagen Nivel"
+  />
+  <ion-card-header>
+    <ion-card-title class="card__subtitle">{{ nivel?.nombre }}</ion-card-title>
+    <ion-card-subtitle>{{ nivel?.descripcion }}</ion-card-subtitle>
+  </ion-card-header>
+  <ion-row>
+    <ion-col>
+      <ion-list>
+        <ion-item>
+          Dificultad: {{ nivel?.dificultad }}
+        </ion-item>
+      </ion-list>
+    </ion-col>
+  </ion-row>
+</ion-card>
+
+<ion-footer no-border>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="regresar()">
+        <ion-icon slot="start" name="arrow-round-back"></ion-icon>
+        <ion-label>Regresar</ion-label>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>

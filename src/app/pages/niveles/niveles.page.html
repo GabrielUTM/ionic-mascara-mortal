@@ -1,0 +1,23 @@
+<app-header titulo="Niveles"></app-header>
+
+<ion-content [fullscreen]="true">
+   <!-- Sección que muestra la lista de niveles -->
+  <div *ngIf="!nivelSeleccionado">
+    <ion-card *ngFor="let nivel of niveles" (click)="verDetalle(nivel)">
+      <img
+        [src]="nivel.imagen ? nivel.imagen : '../../../assets/images/mascaratittle.png'"
+        alt="Imagen Nivel"
+      />
+      <ion-card-header>
+        <ion-card-title class="card__subtitle">{{ nivel.nombre }}</ion-card-title>
+        <ion-card-subtitle>{{ nivel.descripcion }}</ion-card-subtitle>
+      </ion-card-header>
+    </ion-card>
+  </div>
+
+  <!-- Sección que muestra el detalle del nivel seleccionado -->
+  <div *ngIf="nivelSeleccionado">
+    <app-detalleniveles [nivel]="nivelSeleccionado"></app-detalleniveles>
+  </div>
+</ion-content>
+  

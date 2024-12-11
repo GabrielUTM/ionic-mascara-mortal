@@ -23,6 +23,10 @@ const routes: Routes = [
     path: 'controles',
     loadChildren: () => import('./pages/controles/controles.module').then( m => m.ControlesPageModule)
   },
+  {
+    path: 'niveles',
+    loadChildren: () => import('./pages/niveles/niveles.module').then( m => m.NivelesPageModule)
+  },
 
 
 ];

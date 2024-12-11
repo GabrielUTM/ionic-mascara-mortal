@@ -29,6 +29,12 @@ export class MenuComponent  implements OnInit {
       nombre: "Controles",
       ruta: "/controles"
     },
+    {
+      icono: "speedometer-outline",
+      nombre: "Niveles",
+      ruta: "/niveles"
+    },  
+
   ]
   constructor() { }
 
